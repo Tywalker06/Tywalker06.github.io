@@ -1,3 +1,4 @@
+
 /*-----MAIN-----*/
 html {
   box-sizing: border-box;
@@ -26,7 +27,7 @@ a.skip:active, a.skip:focus, a.skip:hover {
 	z-index: 999;
 }
 html, body, header, footer{
-    background-color: #ECECEA;
+    background-color: #456990;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -38,12 +39,19 @@ header, footer, .logo {
 body{
 	display: flex;
 	flex-direction: column;
+
 }
+
+.landing {
+	background-image: url("../imgs/4lbs6.4oz.jpg");
+
+}
+
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Corben', Georgia, Times, serif; 
 }
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 h1{ 
 	font-size: 1.75em;
@@ -80,6 +88,7 @@ header{
     box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 /*mobile-first*/
 .top-nav ul{
@@ -95,7 +104,7 @@ header{
 }
 .top-nav ul li a{
 	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
+	color: white; 
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
@@ -111,24 +120,24 @@ header{
 	text-align: center;
 }
 .top-nav ul li a.current-page{
-	color: #F54320;
+	color: yellow;
 	font-weight: bold;
 }
 .top-nav ul li a.current-page:before {
   content: "\27A4  ";
-  color: #F54320;
+  color: yellow;
   padding-right: 4px;
   position: relative;
   top: 1px;
 }
 .top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
-    background-color: #E3AD02;
-    color: #DDDDDA;
+    background-color: #211D24;
+    color: yellow;
     font-weight: bold;
 }
 .top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
     content: "\27A4  ";
-  	color: #DDDDDA;
+  	color: yellow;
   	padding-right: 4px;
   	position: relative;
   	top: 1px;
@@ -170,8 +179,8 @@ footer p{
 /*.main-content-home{
 	margin-top: 250px;
 }*/
-.home-flag{
-	background-color: #17BEBB;
+/*.home-flag{
+	background-color: yellow;
 	color: #DDDDDA;
 	display: flex;
 	flex-direction: column;
@@ -179,7 +188,7 @@ footer p{
 	margin: auto;
 	padding: 1.5em;
 	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
-}
+}*/
 
 /*-----IMAGES PAGE ------*/
 .main-content-crafts{
@@ -199,6 +208,7 @@ footer p{
 	width: 98%;
   	display: block;
   	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+  	padding: 2%;
 }
 
 .photo-cell_new{
@@ -290,4 +300,103 @@ footer p{
 .icon-button:hover .icon-facebook,
 .icon-button:hover .icon-google-plus {
 	color: white;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  /*background-image: url("../imgs/4lbs6.4oz.jpg");*/
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  
+
+
+/*Added in for timeline*/
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: yellow;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: yellow;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
 }

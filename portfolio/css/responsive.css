@@ -1,4 +1,13 @@
-@media only screen and (min-width: 650px) {
+@media screen and (max-width: 1000px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px; /*250+45-6*/
+  }
+}
+
+@media only screen and (min-width: 750px) {
     .top-nav ul li {
         display:inline-block;
         width: 18%;
@@ -10,11 +19,17 @@
     	    }
 
     .photo-grid {
-  		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+  		/*display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;*/
   		color: #444;
 }
-	.a{
+.photo-cell{
+	width: 85%;
+	margin: 0 auto;
+}
+
+
+/*	.a{
 		grid-row-start: 1;
 		grid-row-end: 3;
 		grid-column-start:1;
@@ -28,11 +43,11 @@
 
 	.c {
 	grid-column-start:1;
-    grid-column-end: 3;
+    grid-column-end: 5;
 	}
 
 	.d{
-	grid-column-start:3;
+	grid-column-start:1;
     grid-column-end: 5;
 	}
 
@@ -50,6 +65,38 @@
 		grid-column-start:1;
 		grid-column-end:5;
 	}
+
+	.h{
+		grid-column-start:1;
+		grid-column-end:5;
+	}
+
+	.i{
+		grid-column-start:1;
+		grid-column-end:5;
+	}
+
+	.j{	
+		grid-column-start:1;
+		grid-column-end:5;
+	}
+
+	.k{
+		grid-column-start:1;
+		grid-column-end:5;
+	}
+
+	.l{
+		grid-column-start:1;
+		grid-column-end:5;
+	}*/
+/*  	.timeline ul li div {
+    	width: 250px;
+  	}
+  	.timeline ul li:nth-child(even) div {
+    	left: -289px; /*250+45-6*/
+
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -156,4 +203,41 @@
 		grid-row-start:6;
 		grid-row-end:7;
 	}
+
+	.container {
+    width: 95%;
+    align-self:center;
+	}
+.photo-cell img{
+	box-shadow: none;
+}
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+   
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+
+  .timeline(
+  	z-index: 0;)
 }
