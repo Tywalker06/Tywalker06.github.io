@@ -42,9 +42,16 @@ body{
 
 }
 
-.landing {
-	background-image: url("../imgs/4lbs6.4oz.jpg");
 
+
+.landing {
+
+        background-color: #211D24;
+        background-image: url("../imgs/4lbs6.4oz.jpg");
+  
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -81,6 +88,9 @@ h6{
 	padding-left: 3%;
 }
 
+    #bio{
+    	margin:10em 1em 0 1em;
+    }
 /*-----HEADER & NAVIGATION-----*/
 header{
 	font-family: 'Quicksand', sans-serif;
@@ -91,50 +101,40 @@ header{
     z-index: 1;
 }
 /*mobile-first*/
-.top-nav ul{
-	list-style-type: none;
-	padding: 0;
-	background-color: #211D24; /*CHANGE*/
-	margin: 0;
-	display: block;
 
-	}
+
+/*Needed*/
 .top-nav ul li, .menu-icon{
-	border-top: 2px solid #F54320 ; /*CHANGE*/
+	border-top: 1px solid yellow ; 
 }
+
 .top-nav ul li a{
 	font-size: 1em;
 	color: white; 
 	text-decoration: none;
-	padding: .5em 1em;
+	padding: .25em 1em;
 	display: block;
-	text-align: center
+	text-align: left;
 
 }
-.menu-icon a{
-	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
-	text-decoration: none;
-	padding: .5em 1em;
-	display: block;
-	text-align: center;
-}
+
+
 .top-nav ul li a.current-page{
 	color: yellow;
 	font-weight: bold;
 }
 .top-nav ul li a.current-page:before {
-  content: "\27A4  ";
+  content: "\27A4";
   color: yellow;
   padding-right: 4px;
   position: relative;
   top: 1px;
 }
-.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
+/*.top-nav a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
     background-color: #211D24;
     color: yellow;
     font-weight: bold;
-}
+}*/
 .top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
     content: "\27A4  ";
   	color: yellow;
@@ -142,14 +142,58 @@ header{
   	position: relative;
   	top: 1px;
 }
-/*implement menu toogle*/
+/*implement menu toogle
 .top-nav.toggle-open ul{
 	display: block;
 }
 
+#top-nav li a {
+		display: block;
+		padding: 8px 15px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #069;
+		border-right: 1px solid #ccc; }
+
+	#top-nav li a:hover {
+		color: yellow;
+		background-color: #069; }*/
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #333;
+  color: yellow;
+}
+
+.active {
+  background-color: #069;
+  color: #069;
+}
+
+.topnav .icon {
+  display: none;
+}
+
 /*-----LOGO-----*/
 .logo{
-	background-color: #211D24; /*CHANGE*/
+	background-color: #069; 
 	margin: 0;
 	text-align: center;
 	padding: .25em .75em;
@@ -172,23 +216,9 @@ footer p{
 
 .icon{
 	padding: .5em .25em 0;
-	height: 25px;
+	height: 45px;
 }
 
-/*-----HOMEPAGE-----*/
-/*.main-content-home{
-	margin-top: 250px;
-}*/
-/*.home-flag{
-	background-color: yellow;
-	color: #DDDDDA;
-	display: flex;
-	flex-direction: column;
-	max-width: 300px;
-	margin: auto;
-	padding: 1.5em;
-	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
-}*/
 
 /*-----IMAGES PAGE ------*/
 .main-content-crafts{
@@ -313,12 +343,23 @@ footer p{
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: #456990;
-  /*background-image: url("../imgs/4lbs6.4oz.jpg");*/
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 50px;
 }  
 
+
+#home-content p{
+	font:60px;
+	/*visibility: hidden;*/
+}
+
+.aboutimg {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 
 /*Added in for timeline*/
 /* INTRO SECTION
@@ -346,10 +387,12 @@ h1 {
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 6px;
+  width: 0px;
   margin: 0 auto;
   padding-top: 50px;
   background: yellow;
+  color:yellow;
+
 }
 
 .timeline ul li::after {
@@ -369,7 +412,7 @@ h1 {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #F45B69;
+  background: #069;
 }
 
 .timeline ul li div::before {
@@ -388,7 +431,7 @@ h1 {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #F45B69 transparent transparent;
+  border-color: transparent #069 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -398,5 +441,5 @@ h1 {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F45B69;
+  border-color: transparent transparent transparent #069;
 }

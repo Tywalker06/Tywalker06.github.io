@@ -8,6 +8,7 @@
     <link rel = "stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/nav.css"> -->
     <link href="http://icons.iconarchive.com/icons/icons8/windows-8/128/Baby-Bottle-icon.png" rel="icon">
 
 </head>
@@ -16,136 +17,143 @@
     <header>
         <nav id = "top-nav" class="top-nav">
             <div class="logo">
-            <a href="index.html"><img src="imgs/block.jpg" alt="Michigan block M"></a>
+            <a href="index.html"><img src="imgs/block2.png" alt="Michigan block M"></a>
             </div>
-           <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="current-page" href="timeline.html">Milestones</a></li>
-                <li><a href="images.html">Meme Gallery</a></li>
-            </ul>   
+
+            <div class="topnav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a class="active" href="timeline.html">Milestones</a>
+              <a  href="images.html">Gallery</a>            
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         </nav>
+
     </header>
     <div id="main-content" class="main-content main-content-home">
-
-<!--         <section class="home-flag">
-            <p>This is my main content.  Note that if you make the screen very small the navigation remains "stuck" to the top of the screen, but doesn't cover my content at page load.  What type of positioning do I need for this?</p>
-            <p>Now check out the footer.  No matter how large I make the screen the footer stays at the bottom, not floating mid-browser.</p>
-            </div>
-
-        </section> -->
         <section class="timeline">
       <ul>
         <li>
           <div>
-            <time>12/06/17</time>
+            <p>12/06/17</p>
             First 19ml fight milk feed
           </div>
         </li>
         <li>
             <div>
-                <time>12/07/17</time>
+                <p>12/07/17</p>
                 Umbilical tube removal & 27ml feed
             </div>
         </li>
         <li>
           <div>
-            <time>12/08/17</time>
+            <p>12/08/17</p>
             17.5 inches long
           </div>
         </li>
         <li>
             <div>
-                <time>12/09/17</time>
+                <p>12/09/17</p>
                 35g gained & 29ml feed
             </div>
         </li>
         <li>
           <div>
-            <time>12/10/17</time>
+            <p>12/10/17</p>
             My first breath on my own & 30ml feed
           </div>
         </li>
         <li>
             <div>
-                <time>12/11/17</time>
+                <p>12/11/17</p>
                 Whoppin 3lbs 12oz, & my first bath!
             </div>
         </li>
                 <li>
             <div>
-                <time>12/16/17</time>
+                <p>12/16/17</p>
                 4lbs 6oz
             </div>
         </li>
         <li>
           <div>
-            <time>12/19/17</time>
+            <p>12/19/17</p>
             I was too ambitious... Cannula back in for now. Up to 4lbs 6.4oz
           </div>
         </li>
         <li>
             <div>
-                <time>12/22/17</time>
+                <p>12/22/17</p>
                 Bye bye cannula, for good this time!
             </div>
         </li>
                 <li>
             <div>
-                <time>12/25/17</time>
+                <p>12/25/17</p>
                 My first christmas of many. Bring on the Egg nog!
             </div>
         </li>
         <li>
           <div>
-            <time>12/29/17</time>
+            <p>12/29/17</p>
             The egg nog consumption has me pushing 5lbs and thirsty for more consuming 42ml
           </div>
         </li>
         <li>
             <div>
-                <time>12/30/17</time>
+                <p>12/30/17</p>
                 Waved goodbye to the critical care room today. Too many gators in there anyway.
             </div>
         </li>
                 <li>
             <div>
-                <time>1/05/18</time>
+                <p>1/05/18</p>
                 Gains have me at 5lbs 7.7oz today
             </div>
         </li>
         <li>
           <div>
-            <time>1/20/18</time>
+            <p>1/20/18</p>
             I am a eating machine! Today I am free to eat at will.
           </div>
         </li>
         <li>
             <div>
-                <time>1/22/18</time>
+                <p>1/22/18</p>
                 Feeding tube was removed & i'm heading home. Time to put mom and dad to work.
             </div>
         </li>
                 <li>
             <div>
-                <time>1/30/18</time>
+                <p>1/30/18</p>
                 My new roomates unfortunately have to actually go back to work.
             </div>
         </li>
         <li>
           <div>
-            <time>2/6/18</time>
+            <p>2/6/18</p>
             2 month checkup passed with flying colors. Packing on the pounds at 7lbs 13oz and a staggering 37 cm long.
           </div>
         </li>
       </ul>
     </section>
     </div>
+            <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
     <footer class="footer">
-        <p>Find me on social media</p>
-        <a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-        <a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-        <a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
+        <p>Find me on social media!</p>
+        <a href="https://twitter.com/minimalmonkey" class="icon-button twitter" alt="twitter icon"><i class="icon-twitter"></i><span></span></a>
+        <a href="https://facebook.com" class="icon-button facebook" alt="facebook icon"><i class="icon-facebook"></i><span></span></a>
+        <a href="https://plus.google.com" class="icon-button google-plus" alt="google icon"><i class="icon-google-plus"></i><span></span></a>
     </footer>
 </body>
 </html>

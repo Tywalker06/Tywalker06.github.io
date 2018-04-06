@@ -1,85 +1,98 @@
+
 <!DOCTYPE html>	
 <html lang="en">
 <head>
 	<title>William Craig Walker</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!--Style-->
 	<link rel = "stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link href="http://icons.iconarchive.com/icons/icons8/windows-8/128/Baby-Bottle-icon.png" rel="icon">
-
 	
-
 </head>
 <body class="body body-home">
 	<a href="#main-content" class="skip">Skip navigation</a> 
 	<header>
 		<nav id = "top-nav" class="top-nav">
 			<div class="logo">
-			<img src="imgs/block.jpg" alt="Michigan block M"></a>
+			<img src="imgs/block2.png" alt="Michigan block M">
        		</div>
-	       <ul>
-	            <li><a href="index.html">Home</a></li>
-	            <li><a href="about.html">About</a></li>
-	            <li><a href="timeline.html">Milestones</a></li>
-	            <li><a class="current-page" href="images.html">Meme Gallery</a></li>
-	        </ul>   
+
+	        <div class="topnav" id="myTopnav">
+			  <a href="index.html">Home</a>
+			  <a href="about.html">About</a>
+			  <a href="timeline.html">Milestones</a>
+			  <a class="active" href="images.html">Gallery</a>			  
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
    		</nav>
 	</header>
 	<div id="main-content" class="main-content main-content-crafts">
 		<!--Photo Gallery-->
 		<section class="crafts">
-			<h1>Meme Gallery</h1>
+			<h1>Photoshop Gallery</h1>
 			<br>
 			<div class="photo-grid">
 				<div class="photo-cell a container">
-					<img id = "black"class="resp-img" src="imgs/popbottlesmeme.jpg" alt="Popping bottles">
+					<img class="resp-img" src="imgs/popbottlesmeme.jpg" alt="Popping bottles">
 				</div>
 
 				<div class="photo-cell b container">
-					<img id = "maroon" class="resp-img" src="imgs/rockymeme.jpg" alt="Rocky">
+					<img class="resp-img" src="imgs/rockymeme.jpg" alt="Rocky">
 				</div>
 				<div class="photo-cell c container">
-					<img id= "yellow" class="resp-img" src="imgs/sbucksmeme.jpg" alt="Starbucks">
+					<img class="resp-img" src="imgs/sbucksmeme.jpg" alt="Starbucks">
 				</div>
 				<div class="photo-cell g container">
-					<img id= "blue" class="resp-img" src="imgs/scarfacememe.jpg" alt="Scarface">
+					<img class="resp-img" src="imgs/scarface.png" alt="Scarface">
 				</div>
 				<div class="photo-cell k container">
-					<img id= "green" class="resp-img" src="imgs/springbreakmeme.jpg" alt="Spring break">
+					<img class="resp-img" src="imgs/springbreak.png" alt="Spring break">
 				</div>
 				<div class="photo-cell f container">
 					<img class="resp-img" src="imgs/sunnymeme.jpg" alt="Always sunny">
 				</div>
 				<div class="photo-cell d container">
-					<img id="red" class="resp-img" src="imgs/lionkingmeme.jpg" alt="Lion king">
+					<img class="resp-img" src="imgs/lionkingmeme.jpg" alt="Lion king">
 				</div>
 				<div class="photo-cell h container">
-					<img id="red" class="resp-img" src="imgs/karatememe.jpg" alt="Karate">
+					<img class="resp-img" src="imgs/karate.png" alt="Karate">
 				</div>
 				<div class="photo-cell i container">
-					<img id="red" class="resp-img" src="imgs/conanmeme.jpg" alt="Conan">
+					<img class="resp-img" src="imgs/conan.png" alt="Conan">
 				</div>
 				<div class="photo-cell j container">
-					<img id="red" class="resp-img" src="imgs/boxermeme.jpg" alt="Boxer">
+					<img class="resp-img" src="imgs/boxer.png" alt="Boxer">
 				</div>
 				<div class="photo-cell e container">
-					<img id="red" class="resp-img" src="imgs/cakememe.jpg" alt="Cake">
+					<img class="resp-img" src="imgs/birthdaycake.png" alt="Cake">
 				</div>
 				<div class="photo-cell l container">
-					<img id="red" class="resp-img" src="imgs/lawmeme.jpg" alt="Law">
+					<img class="resp-img" src="imgs/lawmeme.jpg" alt="Law">
 				</div>
 			</div>
 		</section>
+
+
 	</div>
+
+			<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+</script>
 	<footer class="footer">
-	<!-- *********COLLEEN - I am missing something here accessibility-ise with these font Awesome Icons. -->
-		<p>Find me on social media</p>
-		<a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-		<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-		<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
+		<p>Find me on social media!</p>
+		<a href="https://twitter.com/minimalmonkey" class="icon-button twitter" alt="twitter icon"><i class="icon-twitter"></i><span></span></a>
+		<a href="https://facebook.com" class="icon-button facebook" alt="facebook icon"><i class="icon-facebook"></i><span></span></a>
+		<a href="https://plus.google.com" class="icon-button google-plus" alt="google icon"><i class="icon-google-plus"></i><span></span></a>
 	</footer>
 </body>
 </html>

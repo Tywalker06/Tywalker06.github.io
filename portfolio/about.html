@@ -15,41 +15,56 @@
 	
 
 </head>
-<body class="body body-home">
+<body class=" body-home">
 	<a href="#main-content" class="skip">Skip navigation</a> 
 	<header>
-		<nav id = "top-nav" class="top-nav">
+		<nav >
 			<div class="logo">
-			<a href="index.html"><img src="imgs/block.jpg" alt="Michigan block M"></a>
+			<a href="index.html"><img src="imgs/block2.png" alt="Michigan block M"></a>
        		</div>
-	       <ul>
-	            <li><a href="index.html">Home</a></li>
-	            <li><a class="current-page" href="about.html">About</a></li>
-	            <li><a href="timeline.html">Milestones</a></li>
-	            <li><a href="images.html">Meme Gallery</a></li>
-	        </ul>   
+	        <div class="topnav" id="myTopnav">
+			  <a href="index.html">Home</a>
+			  <a class="active" href="about.html">About</a>
+			  <a href="timeline.html">Milestones</a>
+			  <a href="images.html">Gallery</a>
+			  
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+
    		</nav>
 	</header>
 	<div id="main-content" class="main-content main-content-home">
 		<section class="about">
-			<div class="text-container">
+
+			<div class="text-container" id="bio">
 				<h1>Hello my name is William</h1>
 				<h2>professional eater /  world class snuggler / future wolverine</h2>
 				<br>
 			<p>Lets start with the essentials. My parents are Dennis and Kelly Walker. Despite supporting rival sports programs they still managed to fall in love and that is why I am here today. I am an incredible eater and a fighter. I enjoy the little things like napping with dad and looking over legal documents with mom. Although I am still a little small, I should be able to cast a line out and reel in some big ones with my cousins and uncles (asuming there aren't any pesky gators in the water).</p>
 			</div>
+			
+			<div class="center">
+				<img src="imgs/2monthcheckup1.jpg" alt = "picture of infant" class="aboutimg">
+			</div>
 		
-			</div>
-			<div class="img-container">
-				<img src="imgs/2monthcheckup1.jpg" alt = "picture of infant">
-			</div>
 		</section>
+		<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+</script>
 	</div>
 	<footer class="footer">
-		<p>Find me on social media</p>
-		<a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-		<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-		<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
+		<p>Find me on social media!</p>
+		<a href="https://twitter.com/minimalmonkey" class="icon-button twitter" alt="twitter icon"><i class="icon-twitter"></i><span></span></a>
+		<a href="https://facebook.com" class="icon-button facebook" alt="facebook icon"><i class="icon-facebook"></i><span></span></a>
+		<a href="https://plus.google.com" class="icon-button google-plus" alt="google icon"><i class="icon-google-plus"></i><span></span></a>
 	</footer>
 </body>
 </html>
