@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tyler Walker Exam </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(".a").hide();
+        $('.b').animate({'marginLeft' : "-50%"});
+
+    });
+    $("#show").click(function(){
+        $(".a").show();
+        $('.b').animate({'marginLeft' : "+1%"});
+    });
+});
+</script>
+
+</head>
+<body>
+<h1> Tyler Walker</h1>
+ 
+
+<div class="photo-grid">
+  <div class = "photo-cell a container">
+    <img src="images/examPic.JPG" alt="exam image">
+  </div>
+  <div class = "photo-cell b container">
+    <img src="images/UMSI-logo.jpg" alt="umsi logo">
+  </div>
+</div>
+ 
+
+
+ <button id="hide">Hide Image</button>
+ <button id="show">Show Image</button>
+ 
+
+</body>
+</html>
